@@ -1,0 +1,10 @@
+version: "3"
+services:
+  node-app:
+    environment:
+      - NODE_ENV="production"
+    build: .
+    ports:
+      - "3020:3000"
+    volumes:
+      - ./:/app
